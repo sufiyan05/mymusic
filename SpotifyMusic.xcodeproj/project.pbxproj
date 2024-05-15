@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2033A4C341B12698D9D94812 /* Pods_SpotifyMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B54DD9D7BD9339F3FA22AC89 /* Pods_SpotifyMusic.framework */; };
+		D284CB922806E72000927E22 /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284CB912806E72000927E22 /* HomeVM.swift */; };
+		D284CB952806FC9700927E22 /* TabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D284CB932806FC9700927E22 /* TabCell.swift */; };
+		D284CB962806FC9700927E22 /* TabCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D284CB942806FC9700927E22 /* TabCell.xib */; };
+		D29F5CF528054F000045CFC3 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29F5CF428054F000045CFC3 /* Authentication.storyboard */; };
+		D29F5CF828054F410045CFC3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5CF728054F410045CFC3 /* LoginVC.swift */; };
+		D29F5CFA28054F4E0045CFC3 /* OTPVarificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5CF928054F4E0045CFC3 /* OTPVarificationVC.swift */; };
+		D29F5CFC28054F690045CFC3 /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5CFB28054F690045CFC3 /* StartScreenVC.swift */; };
+		D29F5CFE28054F700045CFC3 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5CFD28054F700045CFC3 /* SignUpVC.swift */; };
+		D29F5D0128054FCA0045CFC3 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D0028054FCA0045CFC3 /* ForgotPasswordVC.swift */; };
+		D29F5D0428054FFB0045CFC3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D29F5D0328054FFB0045CFC3 /* Home.storyboard */; };
+		D29F5D07280550370045CFC3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D06280550370045CFC3 /* HomeVC.swift */; };
+		D29F5D13280550720045CFC3 /* FeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29F5D08280550710045CFC3 /* FeatureCell.xib */; };
+		D29F5D14280550720045CFC3 /* PlayListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29F5D09280550710045CFC3 /* PlayListCell.xib */; };
+		D29F5D15280550720045CFC3 /* FirstPlayListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29F5D0A280550720045CFC3 /* FirstPlayListCell.xib */; };
+		D29F5D16280550720045CFC3 /* PodcastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29F5D0B280550720045CFC3 /* PodcastCell.xib */; };
+		D29F5D19280550720045CFC3 /* PodcastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D0E280550720045CFC3 /* PodcastCell.swift */; };
+		D29F5D1A280550720045CFC3 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D0F280550720045CFC3 /* FeatureCell.swift */; };
+		D29F5D1B280550720045CFC3 /* WrappedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D10280550720045CFC3 /* WrappedCell.swift */; };
+		D29F5D1C280550720045CFC3 /* WrappedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D29F5D11280550720045CFC3 /* WrappedCell.xib */; };
+		D29F5D1D280550720045CFC3 /* FirstPlayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D12280550720045CFC3 /* FirstPlayListCell.swift */; };
+		D29F5D1F280550BF0045CFC3 /* PlayListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D1E280550BE0045CFC3 /* PlayListCell.swift */; };
+		D29F5D21280550F60045CFC3 /* ChoosePodcastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D20280550F60045CFC3 /* ChoosePodcastVC.swift */; };
+		D29F5D252805515C0045CFC3 /* PodcastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D242805515C0045CFC3 /* PodcastModel.swift */; };
+		D29F5D27280551F40045CFC3 /* PlayListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D26280551F40045CFC3 /* PlayListModel.swift */; };
+		D29F5D2B28056DAC0045CFC3 /* UITextField+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D2A28056DAC0045CFC3 /* UITextField+Class.swift */; };
+		D29F5D2F28056F5D0045CFC3 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D2E28056F5D0045CFC3 /* UITextField+Extension.swift */; };
+		D29F5D36280573E40045CFC3 /* FileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D31280573E40045CFC3 /* FileError.swift */; };
+		D29F5D37280573E40045CFC3 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D32280573E40045CFC3 /* AppError.swift */; };
+		D29F5D38280573E40045CFC3 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D33280573E40045CFC3 /* DataSourceError.swift */; };
+		D29F5D39280573E40045CFC3 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D34280573E40045CFC3 /* ValidationError.swift */; };
+		D29F5D3A280573E40045CFC3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D35280573E40045CFC3 /* NetworkError.swift */; };
+		D29F5D3D28057A650045CFC3 /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D3C28057A650045CFC3 /* LoginVM.swift */; };
+		D29F5D3F28057E6B0045CFC3 /* GFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D3E28057E6B0045CFC3 /* GFunction.swift */; };
+		D29F5D4128057FEE0045CFC3 /* ForgotPasswordVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D4028057FEE0045CFC3 /* ForgotPasswordVM.swift */; };
+		D29F5D432805821C0045CFC3 /* SignUpVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D422805821C0045CFC3 /* SignUpVM.swift */; };
+		D29F5D45280583B50045CFC3 /* OTPVarificationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29F5D44280583B50045CFC3 /* OTPVarificationVM.swift */; };
+		D2B961DF2803FF04003B971C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B961DE2803FF04003B971C /* AppDelegate.swift */; };
+		D2B961E12803FF04003B971C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B961E02803FF04003B971C /* SceneDelegate.swift */; };
+		D2B961E82803FF05003B971C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B961E72803FF05003B971C /* Assets.xcassets */; };
+		D2B961EB2803FF05003B971C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B961E92803FF05003B971C /* LaunchScreen.storyboard */; };
+		D2B961FB2803FFBB003B971C /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B961F92803FFBB003B971C /* Colors.xcassets */; };
+		D2B96212280401F7003B971C /* SwiftGen_SwiftGenCLI.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2B9620D280401F7003B971C /* SwiftGen_SwiftGenCLI.bundle */; };
+		D2B96213280401F7003B971C /* swiftgen in Resources */ = {isa = PBXBuildFile; fileRef = D2B9620E280401F7003B971C /* swiftgen */; };
+		D2B96214280401F7003B971C /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = D2B9620F280401F7003B971C /* CHANGELOG.md */; };
+		D2B96215280401F7003B971C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D2B96210280401F7003B971C /* README.md */; };
+		D2B96216280401F7003B971C /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = D2B96211280401F7003B971C /* LICENCE */; };
+		D2B9621828040218003B971C /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9621728040218003B971C /* ScreenSize.swift */; };
+		D2B9621E28040265003B971C /* StoryboardScenes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9621928040265003B971C /* StoryboardScenes.swift */; };
+		D2B9621F28040265003B971C /* StoryboardSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9621A28040265003B971C /* StoryboardSegues.swift */; };
+		D2B9622028040265003B971C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9621B28040265003B971C /* Fonts.swift */; };
+		D2B9622128040265003B971C /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9621C28040265003B971C /* Assets.swift */; };
+		D2B9622228040265003B971C /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9621D28040265003B971C /* LocalizableStrings.swift */; };
+		D2B96224280404FD003B971C /* GClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B96223280404FD003B971C /* GClass.swift */; };
+		D2B962372804055C003B971C /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962252804055C003B971C /* SF-Pro-Text-Ultralight.otf */; };
+		D2B962382804055C003B971C /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962262804055C003B971C /* SF-Pro-Text-Bold.otf */; };
+		D2B962392804055C003B971C /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962272804055C003B971C /* SF-Pro-Text-BoldItalic.otf */; };
+		D2B9623A2804055C003B971C /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962282804055C003B971C /* SF-Pro-Text-Thin.otf */; };
+		D2B9623B2804055C003B971C /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962292804055C003B971C /* SF-Pro-Text-Black.otf */; };
+		D2B9623C2804055C003B971C /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B9622A2804055C003B971C /* SF-Pro-Text-Medium.otf */; };
+		D2B9623D2804055C003B971C /* SF-Pro-Text-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B9622B2804055C003B971C /* SF-Pro-Text-SemiboldItalic.otf */; };
+		D2B9623E2804055C003B971C /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B9622C2804055C003B971C /* SF-Pro-Text-Regular.otf */; };
+		D2B9623F2804055C003B971C /* SF-Pro-Text-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B9622D2804055C003B971C /* SF-Pro-Text-HeavyItalic.otf */; };
+		D2B962402804055C003B971C /* SF-Pro-Text-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B9622E2804055C003B971C /* SF-Pro-Text-UltralightItalic.otf */; };
+		D2B962412804055C003B971C /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B9622F2804055C003B971C /* SF-Pro-Text-Light.otf */; };
+		D2B962422804055C003B971C /* SF-Pro-Text-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962302804055C003B971C /* SF-Pro-Text-RegularItalic.otf */; };
+		D2B962432804055C003B971C /* SF-Pro-Text-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962312804055C003B971C /* SF-Pro-Text-LightItalic.otf */; };
+		D2B962442804055C003B971C /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962322804055C003B971C /* SF-Pro-Text-Semibold.otf */; };
+		D2B962452804055C003B971C /* SF-Pro-Text-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962332804055C003B971C /* SF-Pro-Text-BlackItalic.otf */; };
+		D2B962462804055C003B971C /* SF-Pro-Text-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962342804055C003B971C /* SF-Pro-Text-ThinItalic.otf */; };
+		D2B962472804055C003B971C /* SF-Pro-Text-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962352804055C003B971C /* SF-Pro-Text-MediumItalic.otf */; };
+		D2B962482804055C003B971C /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = D2B962362804055C003B971C /* SF-Pro-Text-Heavy.otf */; };
+		D2B9624E28041196003B971C /* GExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B9624D28041196003B971C /* GExtension.swift */; };
+		D2B96252280415F7003B971C /* GConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B96251280415F7003B971C /* GConstant.swift */; };
+		D2B96254280423DE003B971C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B96253280423DE003B971C /* Validation.swift */; };
+		D2EB570E2807E5CE004FB99D /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EB570D2807E5CE004FB99D /* SearchVC.swift */; };
+		D2EB57102807E5E7004FB99D /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EB570F2807E5E7004FB99D /* LibraryVC.swift */; };
+		D2EB57122807E5FC004FB99D /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EB57112807E5FC004FB99D /* ProfileVC.swift */; };
+		D2EB571428080047004FB99D /* RoundTabbarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2EB571328080047004FB99D /* RoundTabbarVC.swift */; };
+		D2EB571C28082A99004FB99D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2EB571B28082A99004FB99D /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BF419DB12C9EB6C60CFEBEF /* Pods-SpotifyMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyMusic.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyMusic/Pods-SpotifyMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		B54DD9D7BD9339F3FA22AC89 /* Pods_SpotifyMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C367A0DBE70CA2684CE3D254 /* Pods-SpotifyMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyMusic.release.xcconfig"; path = "Target Support Files/Pods-SpotifyMusic/Pods-SpotifyMusic.release.xcconfig"; sourceTree = "<group>"; };
+		D284CB912806E72000927E22 /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
+		D284CB932806FC9700927E22 /* TabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCell.swift; sourceTree = "<group>"; };
+		D284CB942806FC9700927E22 /* TabCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabCell.xib; sourceTree = "<group>"; };
+		D29F5CF428054F000045CFC3 /* Authentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		D29F5CF728054F410045CFC3 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		D29F5CF928054F4E0045CFC3 /* OTPVarificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPVarificationVC.swift; sourceTree = "<group>"; };
+		D29F5CFB28054F690045CFC3 /* StartScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
+		D29F5CFD28054F700045CFC3 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		D29F5D0028054FCA0045CFC3 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
+		D29F5D0328054FFB0045CFC3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		D29F5D06280550370045CFC3 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D29F5D08280550710045CFC3 /* FeatureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeatureCell.xib; sourceTree = "<group>"; };
+		D29F5D09280550710045CFC3 /* PlayListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayListCell.xib; sourceTree = "<group>"; };
+		D29F5D0A280550720045CFC3 /* FirstPlayListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstPlayListCell.xib; sourceTree = "<group>"; };
+		D29F5D0B280550720045CFC3 /* PodcastCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodcastCell.xib; sourceTree = "<group>"; };
+		D29F5D0E280550720045CFC3 /* PodcastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastCell.swift; sourceTree = "<group>"; };
+		D29F5D0F280550720045CFC3 /* FeatureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		D29F5D10280550720045CFC3 /* WrappedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrappedCell.swift; sourceTree = "<group>"; };
+		D29F5D11280550720045CFC3 /* WrappedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WrappedCell.xib; sourceTree = "<group>"; };
+		D29F5D12280550720045CFC3 /* FirstPlayListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstPlayListCell.swift; sourceTree = "<group>"; };
+		D29F5D1E280550BE0045CFC3 /* PlayListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayListCell.swift; sourceTree = "<group>"; };
+		D29F5D20280550F60045CFC3 /* ChoosePodcastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoosePodcastVC.swift; sourceTree = "<group>"; };
+		D29F5D242805515C0045CFC3 /* PodcastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PodcastModel.swift; sourceTree = "<group>"; };
+		D29F5D26280551F40045CFC3 /* PlayListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListModel.swift; sourceTree = "<group>"; };
+		D29F5D2A28056DAC0045CFC3 /* UITextField+Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Class.swift"; sourceTree = "<group>"; };
+		D29F5D2E28056F5D0045CFC3 /* UITextField+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		D29F5D31280573E40045CFC3 /* FileError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileError.swift; sourceTree = "<group>"; };
+		D29F5D32280573E40045CFC3 /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		D29F5D33280573E40045CFC3 /* DataSourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceError.swift; sourceTree = "<group>"; };
+		D29F5D34280573E40045CFC3 /* ValidationError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
+		D29F5D35280573E40045CFC3 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D29F5D3C28057A650045CFC3 /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
+		D29F5D3E28057E6B0045CFC3 /* GFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFunction.swift; sourceTree = "<group>"; };
+		D29F5D4028057FEE0045CFC3 /* ForgotPasswordVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVM.swift; sourceTree = "<group>"; };
+		D29F5D422805821C0045CFC3 /* SignUpVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVM.swift; sourceTree = "<group>"; };
+		D29F5D44280583B50045CFC3 /* OTPVarificationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVarificationVM.swift; sourceTree = "<group>"; };
+		D2B961DB2803FF04003B971C /* SpotifyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2B961DE2803FF04003B971C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D2B961E02803FF04003B971C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D2B961E72803FF05003B971C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2B961EA2803FF05003B971C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2B961EC2803FF05003B971C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B961F92803FFBB003B971C /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		D2B9620D280401F7003B971C /* SwiftGen_SwiftGenCLI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SwiftGen_SwiftGenCLI.bundle; sourceTree = "<group>"; };
+		D2B9620E280401F7003B971C /* swiftgen */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = swiftgen; sourceTree = "<group>"; };
+		D2B9620F280401F7003B971C /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		D2B96210280401F7003B971C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D2B96211280401F7003B971C /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		D2B9621728040218003B971C /* ScreenSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		D2B9621928040265003B971C /* StoryboardScenes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardScenes.swift; sourceTree = "<group>"; };
+		D2B9621A28040265003B971C /* StoryboardSegues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegues.swift; sourceTree = "<group>"; };
+		D2B9621B28040265003B971C /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D2B9621C28040265003B971C /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		D2B9621D28040265003B971C /* LocalizableStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
+		D2B96223280404FD003B971C /* GClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GClass.swift; sourceTree = "<group>"; };
+		D2B962252804055C003B971C /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		D2B962262804055C003B971C /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		D2B962272804055C003B971C /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
+		D2B962282804055C003B971C /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
+		D2B962292804055C003B971C /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		D2B9622A2804055C003B971C /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		D2B9622B2804055C003B971C /* SF-Pro-Text-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		D2B9622C2804055C003B971C /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		D2B9622D2804055C003B971C /* SF-Pro-Text-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-HeavyItalic.otf"; sourceTree = "<group>"; };
+		D2B9622E2804055C003B971C /* SF-Pro-Text-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-UltralightItalic.otf"; sourceTree = "<group>"; };
+		D2B9622F2804055C003B971C /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		D2B962302804055C003B971C /* SF-Pro-Text-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-RegularItalic.otf"; sourceTree = "<group>"; };
+		D2B962312804055C003B971C /* SF-Pro-Text-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-LightItalic.otf"; sourceTree = "<group>"; };
+		D2B962322804055C003B971C /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		D2B962332804055C003B971C /* SF-Pro-Text-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BlackItalic.otf"; sourceTree = "<group>"; };
+		D2B962342804055C003B971C /* SF-Pro-Text-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-ThinItalic.otf"; sourceTree = "<group>"; };
+		D2B962352804055C003B971C /* SF-Pro-Text-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-MediumItalic.otf"; sourceTree = "<group>"; };
+		D2B962362804055C003B971C /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		D2B9624D28041196003B971C /* GExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GExtension.swift; sourceTree = "<group>"; };
+		D2B96251280415F7003B971C /* GConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GConstant.swift; sourceTree = "<group>"; };
+		D2B96253280423DE003B971C /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		D2EB570D2807E5CE004FB99D /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		D2EB570F2807E5E7004FB99D /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
+		D2EB57112807E5FC004FB99D /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		D2EB571328080047004FB99D /* RoundTabbarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTabbarVC.swift; sourceTree = "<group>"; };
+		D2EB571B28082A99004FB99D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2B961D82803FF04003B971C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2033A4C341B12698D9D94812 /* Pods_SpotifyMusic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D284CB902806E65A00927E22 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D284CB912806E72000927E22 /* HomeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D29F5CF228054E540045CFC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5CFF28054FAF0045CFC3 /* XIB */,
+				D29F5D0228054FF30045CFC3 /* Home */,
+				D29F5CF328054EF60045CFC3 /* Authentication */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D29F5CF328054EF60045CFC3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5CF428054F000045CFC3 /* Authentication.storyboard */,
+				D29F5CF628054F120045CFC3 /* Controllers */,
+				D29F5D3B280579E20045CFC3 /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		D29F5CF628054F120045CFC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5CF728054F410045CFC3 /* LoginVC.swift */,
+				D29F5CF928054F4E0045CFC3 /* OTPVarificationVC.swift */,
+				D29F5D20280550F60045CFC3 /* ChoosePodcastVC.swift */,
+				D29F5D0028054FCA0045CFC3 /* ForgotPasswordVC.swift */,
+				D29F5CFD28054F700045CFC3 /* SignUpVC.swift */,
+				D29F5CFB28054F690045CFC3 /* StartScreenVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D29F5CFF28054FAF0045CFC3 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D0F280550720045CFC3 /* FeatureCell.swift */,
+				D29F5D08280550710045CFC3 /* FeatureCell.xib */,
+				D29F5D12280550720045CFC3 /* FirstPlayListCell.swift */,
+				D29F5D0A280550720045CFC3 /* FirstPlayListCell.xib */,
+				D29F5D1E280550BE0045CFC3 /* PlayListCell.swift */,
+				D29F5D09280550710045CFC3 /* PlayListCell.xib */,
+				D29F5D0E280550720045CFC3 /* PodcastCell.swift */,
+				D29F5D0B280550720045CFC3 /* PodcastCell.xib */,
+				D29F5D10280550720045CFC3 /* WrappedCell.swift */,
+				D29F5D11280550720045CFC3 /* WrappedCell.xib */,
+				D284CB932806FC9700927E22 /* TabCell.swift */,
+				D284CB942806FC9700927E22 /* TabCell.xib */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		D29F5D0228054FF30045CFC3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D0328054FFB0045CFC3 /* Home.storyboard */,
+				D29F5D05280550200045CFC3 /* Controllers */,
+				D284CB902806E65A00927E22 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D29F5D05280550200045CFC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D06280550370045CFC3 /* HomeVC.swift */,
+				D2EB570D2807E5CE004FB99D /* SearchVC.swift */,
+				D2EB570F2807E5E7004FB99D /* LibraryVC.swift */,
+				D2EB57112807E5FC004FB99D /* ProfileVC.swift */,
+				D2EB571328080047004FB99D /* RoundTabbarVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D29F5D23280551470045CFC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D242805515C0045CFC3 /* PodcastModel.swift */,
+				D29F5D26280551F40045CFC3 /* PlayListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D29F5D2828056D260045CFC3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D2928056D4E0045CFC3 /* UIKit-Classes */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		D29F5D2928056D4E0045CFC3 /* UIKit-Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D2A28056DAC0045CFC3 /* UITextField+Class.swift */,
+			);
+			path = "UIKit-Classes";
+			sourceTree = "<group>";
+		};
+		D29F5D2C28056F120045CFC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D2D28056F220045CFC3 /* UIKit-Extensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D29F5D2D28056F220045CFC3 /* UIKit-Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D2E28056F5D0045CFC3 /* UITextField+Extension.swift */,
+			);
+			path = "UIKit-Extensions";
+			sourceTree = "<group>";
+		};
+		D29F5D30280573E40045CFC3 /* AppErrors */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D31280573E40045CFC3 /* FileError.swift */,
+				D29F5D32280573E40045CFC3 /* AppError.swift */,
+				D29F5D33280573E40045CFC3 /* DataSourceError.swift */,
+				D29F5D34280573E40045CFC3 /* ValidationError.swift */,
+				D29F5D35280573E40045CFC3 /* NetworkError.swift */,
+			);
+			path = AppErrors;
+			sourceTree = "<group>";
+		};
+		D29F5D3B280579E20045CFC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D422805821C0045CFC3 /* SignUpVM.swift */,
+				D29F5D3C28057A650045CFC3 /* LoginVM.swift */,
+				D29F5D4028057FEE0045CFC3 /* ForgotPasswordVM.swift */,
+				D29F5D44280583B50045CFC3 /* OTPVarificationVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D2B961D22803FF04003B971C = {
+			isa = PBXGroup;
+			children = (
+				D2B961DD2803FF04003B971C /* SpotifyMusic */,
+				D2B961DC2803FF04003B971C /* Products */,
+				F76A0F6D918C36E76AA4B5B1 /* Pods */,
+				E008AF26173ED07E8F311FAD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D2B961DC2803FF04003B971C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2B961DB2803FF04003B971C /* SpotifyMusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2B961DD2803FF04003B971C /* SpotifyMusic */ = {
+			isa = PBXGroup;
+			children = (
+				D2B961F22803FF0E003B971C /* Base */,
+				D2B961F32803FF15003B971C /* Plist */,
+				D2B961F72803FF46003B971C /* ThirdPartyLibrary */,
+				D2B961F42803FF1E003B971C /* Resources */,
+				D2B961F62803FF38003B971C /* Utility */,
+				D29F5D30280573E40045CFC3 /* AppErrors */,
+				D2B961F52803FF2B003B971C /* Scenes */,
+			);
+			path = SpotifyMusic;
+			sourceTree = "<group>";
+		};
+		D2B961F22803FF0E003B971C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D2B961DE2803FF04003B971C /* AppDelegate.swift */,
+				D2B961E02803FF04003B971C /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D2B961F32803FF15003B971C /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				D2B961EC2803FF05003B971C /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		D2B961F42803FF1E003B971C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2B961E72803FF05003B971C /* Assets.xcassets */,
+				D2B961F92803FFBB003B971C /* Colors.xcassets */,
+				D2B961F82803FFBB003B971C /* Fonts */,
+				D2B961FA2803FFBB003B971C /* Generated */,
+				D2EB571B28082A99004FB99D /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2B961F52803FF2B003B971C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D23280551470045CFC3 /* Models */,
+				D29F5CF228054E540045CFC3 /* Views */,
+				D2B9620728040001003B971C /* LaunchScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D2B961F62803FF38003B971C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D29F5D2C28056F120045CFC3 /* Extensions */,
+				D29F5D2828056D260045CFC3 /* Classes */,
+				D2B9621728040218003B971C /* ScreenSize.swift */,
+				D2B96223280404FD003B971C /* GClass.swift */,
+				D2B9624D28041196003B971C /* GExtension.swift */,
+				D2B96251280415F7003B971C /* GConstant.swift */,
+				D2B96253280423DE003B971C /* Validation.swift */,
+				D29F5D3E28057E6B0045CFC3 /* GFunction.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D2B961F72803FF46003B971C /* ThirdPartyLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D2B9620B280401F7003B971C /* SwiftGen */,
+			);
+			path = ThirdPartyLibrary;
+			sourceTree = "<group>";
+		};
+		D2B961F82803FFBB003B971C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D2B962292804055C003B971C /* SF-Pro-Text-Black.otf */,
+				D2B962332804055C003B971C /* SF-Pro-Text-BlackItalic.otf */,
+				D2B962262804055C003B971C /* SF-Pro-Text-Bold.otf */,
+				D2B962272804055C003B971C /* SF-Pro-Text-BoldItalic.otf */,
+				D2B962362804055C003B971C /* SF-Pro-Text-Heavy.otf */,
+				D2B9622D2804055C003B971C /* SF-Pro-Text-HeavyItalic.otf */,
+				D2B9622F2804055C003B971C /* SF-Pro-Text-Light.otf */,
+				D2B962312804055C003B971C /* SF-Pro-Text-LightItalic.otf */,
+				D2B9622A2804055C003B971C /* SF-Pro-Text-Medium.otf */,
+				D2B962352804055C003B971C /* SF-Pro-Text-MediumItalic.otf */,
+				D2B9622C2804055C003B971C /* SF-Pro-Text-Regular.otf */,
+				D2B962302804055C003B971C /* SF-Pro-Text-RegularItalic.otf */,
+				D2B962322804055C003B971C /* SF-Pro-Text-Semibold.otf */,
+				D2B9622B2804055C003B971C /* SF-Pro-Text-SemiboldItalic.otf */,
+				D2B962282804055C003B971C /* SF-Pro-Text-Thin.otf */,
+				D2B962342804055C003B971C /* SF-Pro-Text-ThinItalic.otf */,
+				D2B962252804055C003B971C /* SF-Pro-Text-Ultralight.otf */,
+				D2B9622E2804055C003B971C /* SF-Pro-Text-UltralightItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D2B961FA2803FFBB003B971C /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				D2B9621C28040265003B971C /* Assets.swift */,
+				D2B9621B28040265003B971C /* Fonts.swift */,
+				D2B9621D28040265003B971C /* LocalizableStrings.swift */,
+				D2B9621928040265003B971C /* StoryboardScenes.swift */,
+				D2B9621A28040265003B971C /* StoryboardSegues.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		D2B9620728040001003B971C /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D2B961E92803FF05003B971C /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		D2B9620B280401F7003B971C /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				D2B9620C280401F7003B971C /* bin */,
+				D2B9620F280401F7003B971C /* CHANGELOG.md */,
+				D2B96210280401F7003B971C /* README.md */,
+				D2B96211280401F7003B971C /* LICENCE */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		D2B9620C280401F7003B971C /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				D2B9620D280401F7003B971C /* SwiftGen_SwiftGenCLI.bundle */,
+				D2B9620E280401F7003B971C /* swiftgen */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		E008AF26173ED07E8F311FAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B54DD9D7BD9339F3FA22AC89 /* Pods_SpotifyMusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F76A0F6D918C36E76AA4B5B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BF419DB12C9EB6C60CFEBEF /* Pods-SpotifyMusic.debug.xcconfig */,
+				C367A0DBE70CA2684CE3D254 /* Pods-SpotifyMusic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2B961DA2803FF04003B971C /* SpotifyMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2B961EF2803FF05003B971C /* Build configuration list for PBXNativeTarget "SpotifyMusic" */;
+			buildPhases = (
+				171D55C7389FF97517B0172A /* [CP] Check Pods Manifest.lock */,
+				D2B961D72803FF04003B971C /* Sources */,
+				D2B961D82803FF04003B971C /* Frameworks */,
+				D2B961D92803FF04003B971C /* Resources */,
+				D2B9620A280401BB003B971C /* ShellScript */,
+				F68509B50A5BE984C7B2CB8C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpotifyMusic;
+			productName = SpotifyMusic;
+			productReference = D2B961DB2803FF04003B971C /* SpotifyMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2B961D32803FF04003B971C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D2B961DA2803FF04003B971C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D2B961D62803FF04003B971C /* Build configuration list for PBXProject "SpotifyMusic" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D2B961D22803FF04003B971C;
+			productRefGroup = D2B961DC2803FF04003B971C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2B961DA2803FF04003B971C /* SpotifyMusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2B961D92803FF04003B971C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29F5D15280550720045CFC3 /* FirstPlayListCell.xib in Resources */,
+				D2B962412804055C003B971C /* SF-Pro-Text-Light.otf in Resources */,
+				D29F5D1C280550720045CFC3 /* WrappedCell.xib in Resources */,
+				D2B962402804055C003B971C /* SF-Pro-Text-UltralightItalic.otf in Resources */,
+				D2B96212280401F7003B971C /* SwiftGen_SwiftGenCLI.bundle in Resources */,
+				D284CB962806FC9700927E22 /* TabCell.xib in Resources */,
+				D2B96215280401F7003B971C /* README.md in Resources */,
+				D2B9623F2804055C003B971C /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				D2B962442804055C003B971C /* SF-Pro-Text-Semibold.otf in Resources */,
+				D2B962472804055C003B971C /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				D2EB571C28082A99004FB99D /* Localizable.strings in Resources */,
+				D29F5D13280550720045CFC3 /* FeatureCell.xib in Resources */,
+				D29F5CF528054F000045CFC3 /* Authentication.storyboard in Resources */,
+				D2B9623C2804055C003B971C /* SF-Pro-Text-Medium.otf in Resources */,
+				D2B961FB2803FFBB003B971C /* Colors.xcassets in Resources */,
+				D2B962452804055C003B971C /* SF-Pro-Text-BlackItalic.otf in Resources */,
+				D2B9623E2804055C003B971C /* SF-Pro-Text-Regular.otf in Resources */,
+				D2B961EB2803FF05003B971C /* LaunchScreen.storyboard in Resources */,
+				D29F5D0428054FFB0045CFC3 /* Home.storyboard in Resources */,
+				D2B962382804055C003B971C /* SF-Pro-Text-Bold.otf in Resources */,
+				D2B962422804055C003B971C /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				D2B962392804055C003B971C /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				D2B962482804055C003B971C /* SF-Pro-Text-Heavy.otf in Resources */,
+				D2B9623D2804055C003B971C /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				D2B962372804055C003B971C /* SF-Pro-Text-Ultralight.otf in Resources */,
+				D2B961E82803FF05003B971C /* Assets.xcassets in Resources */,
+				D2B9623A2804055C003B971C /* SF-Pro-Text-Thin.otf in Resources */,
+				D2B96214280401F7003B971C /* CHANGELOG.md in Resources */,
+				D2B96213280401F7003B971C /* swiftgen in Resources */,
+				D2B96216280401F7003B971C /* LICENCE in Resources */,
+				D2B962432804055C003B971C /* SF-Pro-Text-LightItalic.otf in Resources */,
+				D29F5D14280550720045CFC3 /* PlayListCell.xib in Resources */,
+				D2B962462804055C003B971C /* SF-Pro-Text-ThinItalic.otf in Resources */,
+				D2B9623B2804055C003B971C /* SF-Pro-Text-Black.otf in Resources */,
+				D29F5D16280550720045CFC3 /* PodcastCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		171D55C7389FF97517B0172A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotifyMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2B9620A280401BB003B971C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PROJECT_DIR}/${PRODUCT_NAME}/ThirdPartyLibrary/SwiftGen/bin/swiftgen\"\n\n\n";
+		};
+		F68509B50A5BE984C7B2CB8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyMusic/Pods-SpotifyMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyMusic/Pods-SpotifyMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpotifyMusic/Pods-SpotifyMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2B961D72803FF04003B971C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D29F5D1D280550720045CFC3 /* FirstPlayListCell.swift in Sources */,
+				D2B9624E28041196003B971C /* GExtension.swift in Sources */,
+				D29F5D37280573E40045CFC3 /* AppError.swift in Sources */,
+				D284CB922806E72000927E22 /* HomeVM.swift in Sources */,
+				D2B9622028040265003B971C /* Fonts.swift in Sources */,
+				D29F5D19280550720045CFC3 /* PodcastCell.swift in Sources */,
+				D2EB570E2807E5CE004FB99D /* SearchVC.swift in Sources */,
+				D29F5D39280573E40045CFC3 /* ValidationError.swift in Sources */,
+				D284CB952806FC9700927E22 /* TabCell.swift in Sources */,
+				D2B9621F28040265003B971C /* StoryboardSegues.swift in Sources */,
+				D29F5D07280550370045CFC3 /* HomeVC.swift in Sources */,
+				D2B9622128040265003B971C /* Assets.swift in Sources */,
+				D2EB57102807E5E7004FB99D /* LibraryVC.swift in Sources */,
+				D29F5D3A280573E40045CFC3 /* NetworkError.swift in Sources */,
+				D29F5D21280550F60045CFC3 /* ChoosePodcastVC.swift in Sources */,
+				D29F5CFC28054F690045CFC3 /* StartScreenVC.swift in Sources */,
+				D29F5D36280573E40045CFC3 /* FileError.swift in Sources */,
+				D29F5D2F28056F5D0045CFC3 /* UITextField+Extension.swift in Sources */,
+				D2B96254280423DE003B971C /* Validation.swift in Sources */,
+				D29F5D1A280550720045CFC3 /* FeatureCell.swift in Sources */,
+				D2EB57122807E5FC004FB99D /* ProfileVC.swift in Sources */,
+				D29F5D4128057FEE0045CFC3 /* ForgotPasswordVM.swift in Sources */,
+				D2EB571428080047004FB99D /* RoundTabbarVC.swift in Sources */,
+				D29F5D432805821C0045CFC3 /* SignUpVM.swift in Sources */,
+				D29F5D3D28057A650045CFC3 /* LoginVM.swift in Sources */,
+				D29F5D0128054FCA0045CFC3 /* ForgotPasswordVC.swift in Sources */,
+				D29F5CFA28054F4E0045CFC3 /* OTPVarificationVC.swift in Sources */,
+				D29F5D2B28056DAC0045CFC3 /* UITextField+Class.swift in Sources */,
+				D2B96252280415F7003B971C /* GConstant.swift in Sources */,
+				D29F5CFE28054F700045CFC3 /* SignUpVC.swift in Sources */,
+				D29F5D3F28057E6B0045CFC3 /* GFunction.swift in Sources */,
+				D2B961DF2803FF04003B971C /* AppDelegate.swift in Sources */,
+				D2B9622228040265003B971C /* LocalizableStrings.swift in Sources */,
+				D2B961E12803FF04003B971C /* SceneDelegate.swift in Sources */,
+				D29F5CF828054F410045CFC3 /* LoginVC.swift in Sources */,
+				D29F5D38280573E40045CFC3 /* DataSourceError.swift in Sources */,
+				D29F5D27280551F40045CFC3 /* PlayListModel.swift in Sources */,
+				D2B9621828040218003B971C /* ScreenSize.swift in Sources */,
+				D29F5D1B280550720045CFC3 /* WrappedCell.swift in Sources */,
+				D29F5D252805515C0045CFC3 /* PodcastModel.swift in Sources */,
+				D2B96224280404FD003B971C /* GClass.swift in Sources */,
+				D29F5D45280583B50045CFC3 /* OTPVarificationVM.swift in Sources */,
+				D2B9621E28040265003B971C /* StoryboardScenes.swift in Sources */,
+				D29F5D1F280550BF0045CFC3 /* PlayListCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2B961E92803FF05003B971C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2B961EA2803FF05003B971C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2B961ED2803FF05003B971C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D2B961EE2803FF05003B971C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2B961F02803FF05003B971C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF419DB12C9EB6C60CFEBEF /* Pods-SpotifyMusic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotifyMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperlink.SpotifyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D2B961F12803FF05003B971C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C367A0DBE70CA2684CE3D254 /* Pods-SpotifyMusic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpotifyMusic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Authentication;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperlink.SpotifyMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2B961D62803FF04003B971C /* Build configuration list for PBXProject "SpotifyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B961ED2803FF05003B971C /* Debug */,
+				D2B961EE2803FF05003B971C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2B961EF2803FF05003B971C /* Build configuration list for PBXNativeTarget "SpotifyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B961F02803FF05003B971C /* Debug */,
+				D2B961F12803FF05003B971C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2B961D32803FF04003B971C /* Project object */;
+}

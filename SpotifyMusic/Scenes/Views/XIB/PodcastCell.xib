@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PodcastCell" customModule="SpotifyMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="108" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="108" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4g8-sp-ZL1">
+                        <rect key="frame" x="0.0" y="0.0" width="108" height="167"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pgz-hs-oy8">
+                                <rect key="frame" x="0.0" y="0.0" width="108" height="118.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-oO-8Ee">
+                                <rect key="frame" x="5" y="118.5" width="98" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pgz-hs-oy8" firstAttribute="top" secondItem="4g8-sp-ZL1" secondAttribute="top" id="2pX-v1-Qmk"/>
+                            <constraint firstAttribute="trailing" secondItem="FXC-oO-8Ee" secondAttribute="trailing" constant="5" id="ARA-in-l1d"/>
+                            <constraint firstItem="FXC-oO-8Ee" firstAttribute="top" secondItem="Pgz-hs-oy8" secondAttribute="bottom" id="ZvR-A2-wlL"/>
+                            <constraint firstAttribute="bottom" secondItem="FXC-oO-8Ee" secondAttribute="bottom" constant="10" id="okX-O8-I4M"/>
+                            <constraint firstAttribute="trailing" secondItem="Pgz-hs-oy8" secondAttribute="trailing" id="pqh-wy-oih"/>
+                            <constraint firstItem="FXC-oO-8Ee" firstAttribute="leading" secondItem="4g8-sp-ZL1" secondAttribute="leading" constant="5" id="y4b-ID-aOc"/>
+                            <constraint firstItem="Pgz-hs-oy8" firstAttribute="leading" secondItem="4g8-sp-ZL1" secondAttribute="leading" id="z9W-ug-iHM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Pgz-hs-oy8" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="108.6/108.6" id="97e-xB-O5z"/>
+                <constraint firstAttribute="trailing" secondItem="4g8-sp-ZL1" secondAttribute="trailing" id="PCb-RS-zmC"/>
+                <constraint firstItem="4g8-sp-ZL1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aFY-KA-V5M"/>
+                <constraint firstAttribute="bottom" secondItem="4g8-sp-ZL1" secondAttribute="bottom" id="hS7-UK-zxC"/>
+                <constraint firstItem="4g8-sp-ZL1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ihe-IE-RBj"/>
+                <constraint firstItem="Pgz-hs-oy8" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="105/148" id="upd-Ze-USe"/>
+            </constraints>
+            <size key="customSize" width="111" height="167"/>
+            <connections>
+                <outlet property="imgPodcast" destination="Pgz-hs-oy8" id="tU1-V1-pDw"/>
+                <outlet property="lblPodcastName" destination="FXC-oO-8Ee" id="FHU-yT-QHf"/>
+                <outlet property="vwMain" destination="4g8-sp-ZL1" id="9YR-V5-3fo"/>
+            </connections>
+            <point key="canvasLocation" x="175.36231884057972" y="91.40625"/>
+        </collectionViewCell>
+    </objects>
+</document>

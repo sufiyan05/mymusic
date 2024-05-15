@@ -1,0 +1,32 @@
+input_dir: SpotifyMusic
+output_dir: SpotifyMusic/Resources/Generated
+
+xcassets:
+  inputs: [
+            Resources/Assets.xcassets,
+            Resources/Colors.xcassets]
+  outputs:
+    templateName: swift5
+    output: Assets.swift
+    
+fonts:
+  inputs: Resources/Fonts
+  outputs:
+    templateName: swift4
+    output: Fonts.swift
+
+ib:
+  inputs: [
+          Scenes/Views
+          ]
+  outputs:
+    - templateName: scenes-swift5
+      output: StoryboardScenes.swift
+    - templateName: segues-swift5
+      output: StoryboardSegues.swift
+
+strings:
+  inputs: Resources/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: LocalizableStrings.swift

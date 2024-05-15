@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  SpotifyMusic
+
+  Created by 2022M02 on 14/04/22.
+  
+*/
+
+"Millions of songs." = "Millions of songs.";
+"Free on Spotify." = "Free on Spotify.";
+"Sign up free" = "Sign up free";
+"Continue with Google" = "Continue with Google";
+"Continue with Facebook" = "Continue with Facebook";
+"Continue with Apple" = "Continue with Apple";
+"Login" = "Log in";
+"What’s your email?" = "What’s your email?";
+"You’ll need to confirm this email later" = "You’ll need to confirm this email later";
+"Password" = "Password";
+"Volutpat consequat morbi etiam lacinia." = "Volutpat consequat morbi etiam lacinia.";
+"Forgot Password?" = "Forgot Password?";
+"Next" = "Next";
+"Send" = "Send";
+"Convallis arcu at turpis vel habitant pretium velit suscipit." = "Convallis arcu at turpis vel habitant pretium velit suscipit.";
+"Diam quisque et libero diam phasellus faucibus malesuada nisl mattis." = "Diam quisque et libero diam phasellus faucibus malesuada nisl mattis.";
+"Search" = "Search";
+"Done" = "Done";
+"LOGOUT" = "LOGOUT";
+"MY PLAYLISTS" = "MY PLAYLISTS";
+"2021 WRAPPED" = "2021 WRAPPED";
+"POPULAR" = "POPULAR";
+"FEATURED" = "FEATURED";
+"NEW RELEASES" = "NEW RELEASES";
+"EXPLORE" = "EXPLORE";
+"UPGRAD TO PREMIUM" = "UPGRAD TO PREMIUM";

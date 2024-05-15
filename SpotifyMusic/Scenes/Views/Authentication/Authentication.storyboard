@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jeS-qp-g1N">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!-- -->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="Y6W-OH-hqX" customClass="LoginVC" customModule="SpotifyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-vO-Ubp" customClass="ThemeTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GBL-vY-qH9" customClass="ThemeTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="99" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79L-Pw-N7I" customClass="ThemeSubTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="145" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9L-Mu-l18" customClass="ThemeTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="210" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPx-is-3G9" customClass="ThemeSubTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="291" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dm3-Xn-657" customClass="ThemeTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="245" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gj9-Cm-hIf">
+                                <rect key="frame" x="309" y="332" width="46" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnForgotPassword:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0DG-n0-r4Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lv0-xo-25L" customClass="ThemeButton" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="141" y="407" width="93" height="36.5"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fgP-Jb-qgb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="ThemeBlack"/>
+                        <constraints>
+                            <constraint firstItem="V9L-Mu-l18" firstAttribute="leading" secondItem="dSe-vO-Ubp" secondAttribute="leading" id="0iY-6v-uyj"/>
+                            <constraint firstItem="GBL-vY-qH9" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="52/844" id="1WA-VY-k8m"/>
+                            <constraint firstItem="dSe-vO-Ubp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="3fm-Gd-lbk"/>
+                            <constraint firstItem="Dm3-Xn-657" firstAttribute="leading" secondItem="dSe-vO-Ubp" secondAttribute="leading" id="4HR-mq-ubs"/>
+                            <constraint firstItem="V9L-Mu-l18" firstAttribute="trailing" secondItem="dSe-vO-Ubp" secondAttribute="trailing" id="4ic-00-T8u"/>
+                            <constraint firstItem="Lv0-xo-25L" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="97/390" id="7rM-Vy-nAp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dSe-vO-Ubp" secondAttribute="trailing" constant="20" id="9sI-MR-rom"/>
+                            <constraint firstItem="Gj9-Cm-hIf" firstAttribute="top" secondItem="oPx-is-3G9" secondAttribute="bottom" constant="20" id="ARY-A4-LUx"/>
+                            <constraint firstItem="Dm3-Xn-657" firstAttribute="top" secondItem="V9L-Mu-l18" secondAttribute="bottom" constant="14" id="C2t-Uy-aA5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lv0-xo-25L" secondAttribute="bottom" constant="30" id="Fjd-G7-RZx"/>
+                            <constraint firstItem="Dm3-Xn-657" firstAttribute="height" secondItem="GBL-vY-qH9" secondAttribute="height" id="HXf-C9-PaH"/>
+                            <constraint firstItem="Lv0-xo-25L" firstAttribute="top" secondItem="Gj9-Cm-hIf" secondAttribute="bottom" constant="45" id="JHm-HH-7DU"/>
+                            <constraint firstItem="Dm3-Xn-657" firstAttribute="trailing" secondItem="dSe-vO-Ubp" secondAttribute="trailing" id="Jlk-zf-Bpg"/>
+                            <constraint firstItem="79L-Pw-N7I" firstAttribute="top" secondItem="GBL-vY-qH9" secondAttribute="bottom" constant="5" id="K9D-Xy-UIR"/>
+                            <constraint firstItem="oPx-is-3G9" firstAttribute="top" secondItem="Dm3-Xn-657" secondAttribute="bottom" constant="5" id="LdE-Dm-KcL"/>
+                            <constraint firstItem="79L-Pw-N7I" firstAttribute="leading" secondItem="dSe-vO-Ubp" secondAttribute="leading" id="Pe5-w7-lum"/>
+                            <constraint firstItem="V9L-Mu-l18" firstAttribute="top" secondItem="79L-Pw-N7I" secondAttribute="bottom" constant="44" id="YQm-1M-xx6"/>
+                            <constraint firstItem="Gj9-Cm-hIf" firstAttribute="trailing" secondItem="dSe-vO-Ubp" secondAttribute="trailing" id="Ycz-Dx-8fq"/>
+                            <constraint firstItem="GBL-vY-qH9" firstAttribute="top" secondItem="dSe-vO-Ubp" secondAttribute="bottom" constant="14" id="ZOr-Gd-9Gf"/>
+                            <constraint firstItem="79L-Pw-N7I" firstAttribute="trailing" secondItem="dSe-vO-Ubp" secondAttribute="trailing" id="gby-K7-S77"/>
+                            <constraint firstItem="GBL-vY-qH9" firstAttribute="trailing" secondItem="dSe-vO-Ubp" secondAttribute="trailing" id="jMm-lC-1Za"/>
+                            <constraint firstItem="oPx-is-3G9" firstAttribute="trailing" secondItem="dSe-vO-Ubp" secondAttribute="trailing" id="l7a-61-x7u"/>
+                            <constraint firstItem="Lv0-xo-25L" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="liC-NX-7J3"/>
+                            <constraint firstItem="oPx-is-3G9" firstAttribute="leading" secondItem="dSe-vO-Ubp" secondAttribute="leading" id="nJX-oz-oTf"/>
+                            <constraint firstItem="Lv0-xo-25L" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="46/844" id="rt2-bL-sJu"/>
+                            <constraint firstItem="dSe-vO-Ubp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="s2p-IL-RKi"/>
+                            <constraint firstItem="GBL-vY-qH9" firstAttribute="leading" secondItem="dSe-vO-Ubp" secondAttribute="leading" id="yeB-Wt-YJO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fi1-nY-Yoz">
+                        <string key="title" base64-UTF8="YES">
+EA
+</string>
+                        <barButtonItem key="leftBarButtonItem" image="arrowBack" id="fcM-HS-7yW">
+                            <connections>
+                                <action selector="btnBackTapped:" destination="Y6W-OH-hqX" id="b88-hR-PL4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="btnForgotPassword" destination="Gj9-Cm-hIf" id="gld-pw-cSI"/>
+                        <outlet property="btnNext" destination="Lv0-xo-25L" id="NKp-7t-Hyd"/>
+                        <outlet property="lblEmail" destination="dSe-vO-Ubp" id="QSn-3u-1qs"/>
+                        <outlet property="lblEmailSubTitle" destination="79L-Pw-N7I" id="GY4-Lx-8Eq"/>
+                        <outlet property="lblPassword" destination="V9L-Mu-l18" id="iSO-pa-KLG"/>
+                        <outlet property="lblPasswordSubTitle" destination="oPx-is-3G9" id="9jO-dO-z20"/>
+                        <outlet property="txtEmail" destination="GBL-vY-qH9" id="SOX-LQ-wfD"/>
+                        <outlet property="txtPassword" destination="Dm3-Xn-657" id="Gcs-pv-iW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1161" y="44"/>
+        </scene>
+        <!--Forgot Password-->
+        <scene sceneID="5Dk-9e-wY3">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordVC" id="cOR-La-Tys" customClass="ForgotPasswordVC" customModule="SpotifyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5b4-KP-0BT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAU-t9-Txl" customClass="ThemeTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GbE-Cc-09E" customClass="ThemeTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="99" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1e-9s-epA" customClass="ThemeSubTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="145" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gZY-kS-6pi" customClass="ThemeButton" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="141" y="211" width="93" height="36.5"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="btnSendTapped:" destination="cOR-La-Tys" eventType="touchUpInside" id="vxj-Ug-ke5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rgm-at-lIG"/>
+                        <color key="backgroundColor" name="ThemeBlack"/>
+                        <constraints>
+                            <constraint firstItem="gZY-kS-6pi" firstAttribute="height" secondItem="5b4-KP-0BT" secondAttribute="height" multiplier="46/844" id="0Ti-gE-jDd"/>
+                            <constraint firstItem="gZY-kS-6pi" firstAttribute="width" secondItem="5b4-KP-0BT" secondAttribute="width" multiplier="97/390" id="5I6-pd-FdH"/>
+                            <constraint firstItem="rgm-at-lIG" firstAttribute="trailing" secondItem="AAU-t9-Txl" secondAttribute="trailing" constant="20" id="7sH-Mh-kc8"/>
+                            <constraint firstItem="GbE-Cc-09E" firstAttribute="leading" secondItem="AAU-t9-Txl" secondAttribute="leading" id="Fyu-IY-tiN"/>
+                            <constraint firstItem="AAU-t9-Txl" firstAttribute="top" secondItem="rgm-at-lIG" secondAttribute="top" constant="20" id="JnE-ya-hI5"/>
+                            <constraint firstItem="x1e-9s-epA" firstAttribute="top" secondItem="GbE-Cc-09E" secondAttribute="bottom" constant="5" id="Rfz-qt-Hvu"/>
+                            <constraint firstItem="gZY-kS-6pi" firstAttribute="top" secondItem="x1e-9s-epA" secondAttribute="bottom" constant="45" id="UVA-Js-WIf"/>
+                            <constraint firstItem="GbE-Cc-09E" firstAttribute="trailing" secondItem="AAU-t9-Txl" secondAttribute="trailing" id="XYV-K0-boQ"/>
+                            <constraint firstItem="rgm-at-lIG" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gZY-kS-6pi" secondAttribute="bottom" constant="30" id="Ylc-GO-IHg"/>
+                            <constraint firstItem="AAU-t9-Txl" firstAttribute="leading" secondItem="rgm-at-lIG" secondAttribute="leading" constant="20" id="a8A-NA-Zhg"/>
+                            <constraint firstItem="x1e-9s-epA" firstAttribute="leading" secondItem="AAU-t9-Txl" secondAttribute="leading" id="aZi-NH-ihK"/>
+                            <constraint firstItem="GbE-Cc-09E" firstAttribute="height" secondItem="5b4-KP-0BT" secondAttribute="height" multiplier="52/844" id="ebR-Cx-iVg"/>
+                            <constraint firstItem="GbE-Cc-09E" firstAttribute="top" secondItem="AAU-t9-Txl" secondAttribute="bottom" constant="14" id="jif-KN-7ZY"/>
+                            <constraint firstItem="x1e-9s-epA" firstAttribute="trailing" secondItem="AAU-t9-Txl" secondAttribute="trailing" id="x3d-sE-4Ea"/>
+                            <constraint firstItem="gZY-kS-6pi" firstAttribute="centerX" secondItem="5b4-KP-0BT" secondAttribute="centerX" id="zN1-Hh-Nzq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Forgot Password" id="PnT-f8-d88">
+                        <barButtonItem key="leftBarButtonItem" image="arrowBack" id="wTg-8z-RsO">
+                            <connections>
+                                <action selector="btnBackTapped:" destination="cOR-La-Tys" id="re0-XF-Hqq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="btnSend" destination="gZY-kS-6pi" id="uQG-12-N4C"/>
+                        <outlet property="lblEmail" destination="AAU-t9-Txl" id="jcL-Mi-YYq"/>
+                        <outlet property="lblEmailSubTitle" destination="x1e-9s-epA" id="aai-ap-d8f"/>
+                        <outlet property="txtEmail" destination="GbE-Cc-09E" id="6kD-VJ-1YZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cdp-y3-Ra9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="44"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rfa-Ab-Ryj">
+            <objects>
+                <navigationController storyboardIdentifier="navStartScreen" automaticallyAdjustsScrollViewInsets="NO" id="jeS-qp-g1N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zRw-8f-gQl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="m5d-4o-opH" kind="relationship" relationship="rootViewController" id="RD6-cY-FvC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wkw-bL-yQI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177" y="44"/>
+        </scene>
+        <!--Start ScreenVC-->
+        <scene sceneID="vJd-Fj-tTD">
+            <objects>
+                <viewController storyboardIdentifier="StartScreenVC" id="m5d-4o-opH" customClass="StartScreenVC" customModule="SpotifyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CS1-gm-mfF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startBackground" translatesAutoresizingMaskIntoConstraints="NO" id="JrQ-9l-gt2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9z-cv-8a3">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="380"/>
+                                <color key="backgroundColor" name="ThemeExtraLightBlack"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOT-sG-4Uz">
+                                <rect key="frame" x="0.0" y="380" width="375" height="287"/>
+                                <color key="backgroundColor" name="ThemeDarkBlack"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="DCp-Wm-eEK">
+                                <rect key="frame" x="167" y="188.5" width="41" height="41.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DCp-Wm-eEK" secondAttribute="height" multiplier="1:1" id="tA9-8F-M7G"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxu-Iv-11F">
+                                <rect key="frame" x="20" y="245" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4V5-L8-onA">
+                                <rect key="frame" x="20" y="275.5" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="H0a-yN-Hbs">
+                                <rect key="frame" x="33" y="334" width="309" height="303"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RxO-JN-PgS">
+                                        <rect key="frame" x="0.0" y="0.0" width="309" height="51"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnSignUpTapped:" destination="m5d-4o-opH" eventType="touchUpInside" id="yUy-fa-ZXa"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkk-eh-Z3W" customClass="ThemeView" customModule="SpotifyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="63" width="309" height="51"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="google" translatesAutoresizingMaskIntoConstraints="NO" id="BTq-99-Qvx">
+                                                <rect key="frame" x="18" y="13" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="BTq-99-Qvx" secondAttribute="height" multiplier="1:1" id="K2S-su-nTI"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBp-DT-HlZ">
+                                                <rect key="frame" x="0.0" y="15.5" width="299" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLi-ob-pxA">
+                                                <rect key="frame" x="0.0" y="0.0" width="309" height="51"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="btnGoogleTapped:" destination="m5d-4o-opH" eventType="touchUpInside" id="IDQ-0R-4fY"/>
+                                                    <action selector="btnLoginTapped:" destination="m5d-4o-opH" eventType="touchUpInside" id="mbv-jh-cGv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="BTq-99-Qvx" secondAttribute="bottom" constant="13" id="3Nt-L9-HB1"/>
+                                            <constraint firstItem="BTq-99-Qvx" firstAttribute="leading" secondItem="fkk-eh-Z3W" secondAttribute="leading" constant="18" id="4av-dV-vVx"/>
+                                            <constraint firstAttribute="trailing" secondItem="uLi-ob-pxA" secondAttribute="trailing" id="9xK-b9-p3p"/>
+                                            <constraint firstItem="BTq-99-Qvx" firstAttribute="top" secondItem="fkk-eh-Z3W" secondAttribute="top" constant="13" id="Kut-cT-7B0"/>
+                                            <constraint firstItem="uLi-ob-pxA" firstAttribute="leading" secondItem="fkk-eh-Z3W" secondAttribute="leading" id="P5d-DM-aXS"/>
+                                            <constraint firstItem="WBp-DT-HlZ" firstAttribute="centerY" secondItem="BTq-99-Qvx" secondAttribute="centerY" id="e6Q-TG-gxE"/>
+                                            <constraint firstItem="uLi-ob-pxA" firstAttribute="top" secondItem="fkk-eh-Z3W" secondAttribute="top" id="gFW-HW-D7G"/>
+                                            <constraint firstAttribute="bottom" secondItem="uLi-ob-pxA" secondAttribute="bottom" id="oA5-QW-4Bf"/>
+                                            <constraint firstItem="WBp-DT-HlZ" firstAttribute="leading" secondItem="fkk-eh-Z3W" secondAttribute="leading" id="rHL-MT-bk7"/>
+                                            <constraint firstAttribute="trailing" secondItem="WBp-DT-HlZ" secondAttribute="trailing" constant="10" id="z3M-fc-mwU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M29-v1-8fc" customClass="ThemeView" customModule="SpotifyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="126" width="309" height="51"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook" translatesAutoresizingMaskIntoConstraints="NO" id="60P-Ww-rQz">
+                                                <rect key="frame" x="18" y="13" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="60P-Ww-rQz" secondAttribute="height" multiplier="1:1" id="Bb6-gQ-Mwe"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohs-RU-O2r">
+                                                <rect key="frame" x="0.0" y="15.5" width="299" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjw-xG-hIz">
+                                                <rect key="frame" x="0.0" y="0.0" width="309" height="51"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="btnFacebookTapped:" destination="m5d-4o-opH" eventType="touchUpInside" id="6VL-KS-SJ5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Ohs-RU-O2r" firstAttribute="centerY" secondItem="60P-Ww-rQz" secondAttribute="centerY" id="1rS-kJ-2vP"/>
+                                            <constraint firstItem="60P-Ww-rQz" firstAttribute="leading" secondItem="M29-v1-8fc" secondAttribute="leading" constant="18" id="5AN-8q-1gF"/>
+                                            <constraint firstAttribute="trailing" secondItem="fjw-xG-hIz" secondAttribute="trailing" id="6fx-8W-WiB"/>
+                                            <constraint firstItem="fjw-xG-hIz" firstAttribute="top" secondItem="M29-v1-8fc" secondAttribute="top" id="80D-Yo-J4R"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ohs-RU-O2r" secondAttribute="trailing" constant="10" id="85j-dD-2wa"/>
+                                            <constraint firstAttribute="bottom" secondItem="60P-Ww-rQz" secondAttribute="bottom" constant="13" id="Sqz-BA-w6o"/>
+                                            <constraint firstItem="Ohs-RU-O2r" firstAttribute="leading" secondItem="M29-v1-8fc" secondAttribute="leading" id="guF-hJ-REq"/>
+                                            <constraint firstItem="fjw-xG-hIz" firstAttribute="leading" secondItem="M29-v1-8fc" secondAttribute="leading" id="hum-hJ-hgt"/>
+                                            <constraint firstAttribute="bottom" secondItem="fjw-xG-hIz" secondAttribute="bottom" id="vIe-C4-2R4"/>
+                                            <constraint firstItem="60P-Ww-rQz" firstAttribute="top" secondItem="M29-v1-8fc" secondAttribute="top" constant="13" id="xTB-YF-rX3"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoK-Nn-bqh" customClass="ThemeView" customModule="SpotifyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="189" width="309" height="51"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="48P-cq-yhF">
+                                                <rect key="frame" x="18" y="13" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="48P-cq-yhF" secondAttribute="height" multiplier="1:1" id="I9k-4y-q4s"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOK-WW-JQW">
+                                                <rect key="frame" x="0.0" y="15.5" width="299" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abT-rr-BLJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="309" height="51"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="btnAppleTapped:" destination="m5d-4o-opH" eventType="touchUpInside" id="Izh-S3-x2l"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="48P-cq-yhF" secondAttribute="bottom" constant="13" id="H04-YW-7sK"/>
+                                            <constraint firstItem="48P-cq-yhF" firstAttribute="top" secondItem="hoK-Nn-bqh" secondAttribute="top" constant="13" id="Iaa-ED-J2I"/>
+                                            <constraint firstItem="48P-cq-yhF" firstAttribute="leading" secondItem="hoK-Nn-bqh" secondAttribute="leading" constant="18" id="PRo-dk-hsF"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZOK-WW-JQW" secondAttribute="trailing" constant="10" id="Wix-qF-5Bq"/>
+                                            <constraint firstItem="ZOK-WW-JQW" firstAttribute="centerY" secondItem="48P-cq-yhF" secondAttribute="centerY" id="jAM-R2-NCc"/>
+                                            <constraint firstItem="ZOK-WW-JQW" firstAttribute="leading" secondItem="hoK-Nn-bqh" secondAttribute="leading" id="r5I-Of-SbF"/>
+                                            <constraint firstItem="abT-rr-BLJ" firstAttribute="top" secondItem="hoK-Nn-bqh" secondAttribute="top" id="sRy-0p-UM2"/>
+                                            <constraint firstAttribute="bottom" secondItem="abT-rr-BLJ" secondAttribute="bottom" id="vV5-q3-3vp"/>
+                                            <constraint firstItem="abT-rr-BLJ" firstAttribute="leading" secondItem="hoK-Nn-bqh" secondAttribute="leading" id="vm0-mN-PDX"/>
+                                            <constraint firstAttribute="trailing" secondItem="abT-rr-BLJ" secondAttribute="trailing" id="yfI-94-cRp"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C51-kv-jRS">
+                                        <rect key="frame" x="0.0" y="252" width="309" height="51"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnLoginTapped:" destination="m5d-4o-opH" eventType="touchUpInside" id="p5N-AU-KDj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wv4-KD-tkD"/>
+                        <color key="backgroundColor" name="ThemeBlack"/>
+                        <constraints>
+                            <constraint firstItem="Wv4-KD-tkD" firstAttribute="trailing" secondItem="JrQ-9l-gt2" secondAttribute="trailing" id="5v6-Oz-L4r"/>
+                            <constraint firstItem="JrQ-9l-gt2" firstAttribute="height" secondItem="CS1-gm-mfF" secondAttribute="height" multiplier="481/844" id="8bc-pZ-fEi"/>
+                            <constraint firstItem="Kxu-Iv-11F" firstAttribute="leading" secondItem="Wv4-KD-tkD" secondAttribute="leading" constant="20" id="9xx-Qb-N6o"/>
+                            <constraint firstItem="H0a-yN-Hbs" firstAttribute="top" secondItem="4V5-L8-onA" secondAttribute="bottom" constant="38" id="AgG-lz-TdO"/>
+                            <constraint firstItem="Wv4-KD-tkD" firstAttribute="trailing" secondItem="Kxu-Iv-11F" secondAttribute="trailing" constant="20" id="CXy-Ak-CFq"/>
+                            <constraint firstItem="DCp-Wm-eEK" firstAttribute="centerX" secondItem="CS1-gm-mfF" secondAttribute="centerX" id="ClN-Dk-r1R"/>
+                            <constraint firstItem="OOT-sG-4Uz" firstAttribute="leading" secondItem="Wv4-KD-tkD" secondAttribute="leading" id="Ds5-RB-qa9"/>
+                            <constraint firstItem="4V5-L8-onA" firstAttribute="trailing" secondItem="Kxu-Iv-11F" secondAttribute="trailing" id="JxC-eB-nsE"/>
+                            <constraint firstItem="4V5-L8-onA" firstAttribute="top" secondItem="Kxu-Iv-11F" secondAttribute="bottom" constant="10" id="KhQ-BT-BwU"/>
+                            <constraint firstAttribute="bottom" secondItem="OOT-sG-4Uz" secondAttribute="bottom" id="R11-jv-60m"/>
+                            <constraint firstItem="OOT-sG-4Uz" firstAttribute="trailing" secondItem="Wv4-KD-tkD" secondAttribute="trailing" id="TtT-UF-yfp"/>
+                            <constraint firstItem="Wv4-KD-tkD" firstAttribute="trailing" secondItem="H0a-yN-Hbs" secondAttribute="trailing" constant="33" id="XE8-hE-U7M"/>
+                            <constraint firstAttribute="bottom" secondItem="H0a-yN-Hbs" secondAttribute="bottom" constant="30" id="Xf1-CR-n7Y"/>
+                            <constraint firstItem="H0a-yN-Hbs" firstAttribute="leading" secondItem="Wv4-KD-tkD" secondAttribute="leading" constant="33" id="ckf-cK-X46"/>
+                            <constraint firstItem="Kxu-Iv-11F" firstAttribute="top" secondItem="DCp-Wm-eEK" secondAttribute="bottom" constant="15" id="eBc-qf-vUP"/>
+                            <constraint firstItem="W9z-cv-8a3" firstAttribute="top" secondItem="JrQ-9l-gt2" secondAttribute="top" id="jLL-Qt-vKd"/>
+                            <constraint firstItem="BTq-99-Qvx" firstAttribute="width" secondItem="CS1-gm-mfF" secondAttribute="width" multiplier="26/390" id="jW5-vb-Ufq"/>
+                            <constraint firstItem="JrQ-9l-gt2" firstAttribute="top" secondItem="CS1-gm-mfF" secondAttribute="top" id="lUB-Oc-29F"/>
+                            <constraint firstItem="OOT-sG-4Uz" firstAttribute="top" secondItem="W9z-cv-8a3" secondAttribute="bottom" id="lg9-FG-uit"/>
+                            <constraint firstItem="4V5-L8-onA" firstAttribute="leading" secondItem="Kxu-Iv-11F" secondAttribute="leading" id="oQp-rs-juR"/>
+                            <constraint firstItem="W9z-cv-8a3" firstAttribute="bottom" secondItem="JrQ-9l-gt2" secondAttribute="bottom" id="ph7-J8-RYq"/>
+                            <constraint firstItem="JrQ-9l-gt2" firstAttribute="leading" secondItem="Wv4-KD-tkD" secondAttribute="leading" id="tdD-oi-uBl"/>
+                            <constraint firstItem="W9z-cv-8a3" firstAttribute="trailing" secondItem="JrQ-9l-gt2" secondAttribute="trailing" id="wkl-pA-iaA"/>
+                            <constraint firstItem="W9z-cv-8a3" firstAttribute="leading" secondItem="JrQ-9l-gt2" secondAttribute="leading" id="xEu-5w-mEL"/>
+                            <constraint firstItem="DCp-Wm-eEK" firstAttribute="width" secondItem="CS1-gm-mfF" secondAttribute="width" multiplier="43/390" id="xyO-23-tYD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qat-Bv-W26"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="btnLogin" destination="C51-kv-jRS" id="IR1-lc-XFX"/>
+                        <outlet property="btnSignUp" destination="RxO-JN-PgS" id="Vxh-OZ-aRH"/>
+                        <outlet property="lblApple" destination="ZOK-WW-JQW" id="HZG-iV-4Bh"/>
+                        <outlet property="lblFaceBook" destination="Ohs-RU-O2r" id="I3Z-fU-8nm"/>
+                        <outlet property="lblGoogle" destination="WBp-DT-HlZ" id="sWz-Ud-Ell"/>
+                        <outlet property="lblSubTitle" destination="4V5-L8-onA" id="4N6-tV-8jr"/>
+                        <outlet property="lblTitle" destination="Kxu-Iv-11F" id="6h6-8N-9Zp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ls-c6-AtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="476" y="43.628185907046479"/>
+        </scene>
+        <!--Create account-->
+        <scene sceneID="jDd-9C-aab">
+            <objects>
+                <viewController storyboardIdentifier="SignUpVC" id="1gY-vX-xO7" customClass="SignUpVC" customModule="SpotifyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mxd-2U-ZsA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rg-MG-94q" customClass="ThemeTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRo-Ou-GyX" customClass="ThemeTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="99" width="335" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c4-B5-Z5i" customClass="ThemeSubTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="145" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9sf-kd-Msh" customClass="ThemeButton" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="141" y="211" width="93" height="36.5"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextTapped:" destination="1gY-vX-xO7" eventType="touchUpInside" id="psB-iL-9cL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Je0-ib-aL1"/>
+                        <color key="backgroundColor" name="ThemeBlack"/>
+                        <constraints>
+                            <constraint firstItem="9sf-kd-Msh" firstAttribute="width" secondItem="mxd-2U-ZsA" secondAttribute="width" multiplier="97/390" id="0cS-no-Lx9"/>
+                            <constraint firstItem="Je0-ib-aL1" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9sf-kd-Msh" secondAttribute="bottom" constant="30" id="3FD-hg-lvE"/>
+                            <constraint firstItem="5c4-B5-Z5i" firstAttribute="trailing" secondItem="6Rg-MG-94q" secondAttribute="trailing" id="C1N-1c-ACI"/>
+                            <constraint firstItem="9sf-kd-Msh" firstAttribute="height" secondItem="mxd-2U-ZsA" secondAttribute="height" multiplier="46/844" id="DHK-Am-qzq"/>
+                            <constraint firstItem="5c4-B5-Z5i" firstAttribute="top" secondItem="VRo-Ou-GyX" secondAttribute="bottom" constant="5" id="KkV-5s-4Sc"/>
+                            <constraint firstItem="VRo-Ou-GyX" firstAttribute="height" secondItem="mxd-2U-ZsA" secondAttribute="height" multiplier="52/844" id="Ko0-f8-Kxc"/>
+                            <constraint firstItem="VRo-Ou-GyX" firstAttribute="top" secondItem="6Rg-MG-94q" secondAttribute="bottom" constant="14" id="LzT-dB-heO"/>
+                            <constraint firstItem="9sf-kd-Msh" firstAttribute="centerX" secondItem="mxd-2U-ZsA" secondAttribute="centerX" id="O2l-UL-ZRA"/>
+                            <constraint firstItem="6Rg-MG-94q" firstAttribute="leading" secondItem="Je0-ib-aL1" secondAttribute="leading" constant="20" id="PDs-Gg-a3e"/>
+                            <constraint firstItem="VRo-Ou-GyX" firstAttribute="leading" secondItem="6Rg-MG-94q" secondAttribute="leading" id="T9C-wE-3da"/>
+                            <constraint firstItem="VRo-Ou-GyX" firstAttribute="trailing" secondItem="6Rg-MG-94q" secondAttribute="trailing" id="VD4-ro-BXj"/>
+                            <constraint firstItem="6Rg-MG-94q" firstAttribute="top" secondItem="Je0-ib-aL1" secondAttribute="top" constant="20" id="ZZE-mX-w4W"/>
+                            <constraint firstItem="5c4-B5-Z5i" firstAttribute="leading" secondItem="6Rg-MG-94q" secondAttribute="leading" id="ewx-Lb-508"/>
+                            <constraint firstItem="Je0-ib-aL1" firstAttribute="trailing" secondItem="6Rg-MG-94q" secondAttribute="trailing" constant="20" id="ggI-ju-AFJ"/>
+                            <constraint firstItem="9sf-kd-Msh" firstAttribute="top" secondItem="5c4-B5-Z5i" secondAttribute="bottom" constant="45" id="pgb-MA-ER8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create account" id="93N-vt-a5w">
+                        <barButtonItem key="leftBarButtonItem" image="arrowBack" id="6lu-cd-Psz">
+                            <connections>
+                                <action selector="btnBackTapped:" destination="1gY-vX-xO7" id="Kyf-Dr-SPP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="btnNext" destination="9sf-kd-Msh" id="ZUP-y0-3Ir"/>
+                        <outlet property="lblEmail" destination="6Rg-MG-94q" id="esS-xh-J7G"/>
+                        <outlet property="lblEmailSubTitle" destination="5c4-B5-Z5i" id="Id3-gZ-qf1"/>
+                        <outlet property="txtEmail" destination="VRo-Ou-GyX" id="isc-cF-Wqb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Vv-iC-yki" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="44"/>
+        </scene>
+        <!--OTP Varification-->
+        <scene sceneID="P54-5j-QWy">
+            <objects>
+                <viewController storyboardIdentifier="OTPVarificationVC" id="BpI-Ki-nuB" customClass="OTPVarificationVC" customModule="SpotifyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="20S-TE-aWU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-gA-M65" customClass="ThemeSubTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="26" y="144" width="323" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLM-er-pfc" customClass="ThemeSubTitle" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="26" y="169.5" width="323" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="gSp-uj-LMD">
+                                <rect key="frame" x="78.5" y="238" width="218" height="41"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Hs-St-5PS" customClass="OTPTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+                                        <color key="backgroundColor" name="ThemeLightBlack"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0Hs-St-5PS" secondAttribute="height" multiplier="1:1" id="a5O-7q-BxJ"/>
+                                        </constraints>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RWI-X7-R6T" customClass="OTPTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="59" y="0.0" width="41" height="41"/>
+                                        <color key="backgroundColor" name="ThemeLightBlack"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C20-wv-jog" customClass="OTPTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="118" y="0.0" width="41" height="41"/>
+                                        <color key="backgroundColor" name="ThemeLightBlack"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Qg-bE-U4W" customClass="OTPTextField" customModule="SpotifyMusic" customModuleProvider="target">
+                                        <rect key="frame" x="177" y="0.0" width="41" height="41"/>
+                                        <color key="backgroundColor" name="ThemeLightBlack"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAZ-J3-eaX" customClass="ThemeButton" customModule="SpotifyMusic" customModuleProvider="target">
+                                <rect key="frame" x="141" y="327" width="93" height="36.5"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="btnNextTapped:" destination="BpI-Ki-nuB" eventType="touchUpInside" id="2qE-KG-24b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QrF-M4-6wg"/>
+                        <color key="backgroundColor" name="ThemeBlack"/>
+                        <constraints>
+                            <constraint firstItem="gxg-gA-M65" firstAttribute="top" secondItem="QrF-M4-6wg" secondAttribute="top" constant="100" id="G6C-k1-yDO"/>
+                            <constraint firstItem="cLM-er-pfc" firstAttribute="trailing" secondItem="gxg-gA-M65" secondAttribute="trailing" id="KUq-Cf-MfT"/>
+                            <constraint firstItem="cLM-er-pfc" firstAttribute="top" secondItem="gxg-gA-M65" secondAttribute="bottom" constant="5" id="ZK9-mY-zFS"/>
+                            <constraint firstItem="gSp-uj-LMD" firstAttribute="centerX" secondItem="20S-TE-aWU" secondAttribute="centerX" id="aFK-Ot-TNC"/>
+                            <constraint firstItem="0Hs-St-5PS" firstAttribute="height" secondItem="20S-TE-aWU" secondAttribute="height" multiplier="52/844" id="d19-xk-T0e"/>
+                            <constraint firstItem="QrF-M4-6wg" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gAZ-J3-eaX" secondAttribute="bottom" constant="30" id="exX-pf-Qej"/>
+                            <constraint firstItem="gxg-gA-M65" firstAttribute="leading" secondItem="QrF-M4-6wg" secondAttribute="leading" constant="26" id="f3c-1r-vfx"/>
+                            <constraint firstItem="gAZ-J3-eaX" firstAttribute="height" secondItem="20S-TE-aWU" secondAttribute="height" multiplier="46/844" id="ncs-O7-J2N"/>
+                            <constraint firstItem="cLM-er-pfc" firstAttribute="leading" secondItem="gxg-gA-M65" secondAttribute="leading" id="pqs-3k-2ci"/>
+                            <constraint firstItem="gAZ-J3-eaX" firstAttribute="top" secondItem="gSp-uj-LMD" secondAttribute="bottom" constant="48" id="q29-5V-e4D"/>
+                            <constraint firstItem="gAZ-J3-eaX" firstAttribute="centerX" secondItem="20S-TE-aWU" secondAttribute="centerX" id="rJb-OJ-5xZ"/>
+                            <constraint firstItem="gAZ-J3-eaX" firstAttribute="width" secondItem="20S-TE-aWU" secondAttribute="width" multiplier="97/390" id="uIi-2M-DYS"/>
+                            <constraint firstItem="gSp-uj-LMD" firstAttribute="top" secondItem="cLM-er-pfc" secondAttribute="bottom" constant="48" id="wpd-SN-gXg"/>
+                            <constraint firstItem="QrF-M4-6wg" firstAttribute="trailing" secondItem="gxg-gA-M65" secondAttribute="trailing" constant="26" id="wrS-eP-DLa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="OTP Varification" id="cEZ-RF-N6S">
+                        <barButtonItem key="leftBarButtonItem" image="arrowBack" id="j7m-eL-RnK">
+                            <connections>
+                                <action selector="btnBackTapped:" destination="BpI-Ki-nuB" id="PL3-FW-Iln"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="btnNext" destination="gAZ-J3-eaX" id="hs6-Cp-hk2"/>
+                        <outlet property="lblSubTitle" destination="cLM-er-pfc" id="iBN-Ub-Kxm"/>
+                        <outlet property="lblTitle" destination="gxg-gA-M65" id="jxF-eB-6Ca"/>
+                        <outlet property="txtCodeFour" destination="1Qg-bE-U4W" id="JeS-pp-XTn"/>
+                        <outlet property="txtCodeOne" destination="0Hs-St-5PS" id="VxP-0o-0NF"/>
+                        <outlet property="txtCodeThree" destination="C20-wv-jog" id="nye-FT-IQG"/>
+                        <outlet property="txtCodeTwo" destination="RWI-X7-R6T" id="jGB-PT-o1k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtl-me-FAC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3128.8000000000002" y="43.628185907046479"/>
+        </scene>
+        <!--Now choose some podcasts.-->
+        <scene sceneID="ykn-UM-bk7">
+            <objects>
+                <viewController storyboardIdentifier="ChoosePodcastVC" id="oiu-nY-s1G" customClass="ChoosePodcastVC" customModule="SpotifyMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sno-BQ-TnW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KjO-YA-LWk">
+                                <rect key="frame" x="10" y="63" width="355" height="39.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0is-5s-dpe">
+                                <rect key="frame" x="0.0" y="117.5" width="375" height="549.5"/>
+                                <color key="backgroundColor" name="ThemeBlack"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Is8-Qd-3ZX">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadow" translatesAutoresizingMaskIntoConstraints="NO" id="KVm-8Z-ySS">
+                                <rect key="frame" x="0.0" y="532" width="375" height="135"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0O-WB-Of2">
+                                <rect key="frame" x="132" y="586" width="111" height="41"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="btnDoneTapped:" destination="oiu-nY-s1G" eventType="touchUpInside" id="tUC-ga-5vD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="da5-JH-VSR"/>
+                        <color key="backgroundColor" name="ThemeBlack"/>
+                        <constraints>
+                            <constraint firstItem="da5-JH-VSR" firstAttribute="trailing" secondItem="KjO-YA-LWk" secondAttribute="trailing" constant="10" id="2kY-3L-Gnx"/>
+                            <constraint firstAttribute="bottom" secondItem="KVm-8Z-ySS" secondAttribute="bottom" id="Ce7-1L-cwR"/>
+                            <constraint firstItem="0is-5s-dpe" firstAttribute="leading" secondItem="da5-JH-VSR" secondAttribute="leading" id="Lmu-ia-1Or"/>
+                            <constraint firstItem="T0O-WB-Of2" firstAttribute="centerX" secondItem="sno-BQ-TnW" secondAttribute="centerX" id="MgG-DE-dwC"/>
+                            <constraint firstItem="KjO-YA-LWk" firstAttribute="top" secondItem="da5-JH-VSR" secondAttribute="top" constant="19" id="QO7-rO-2sG"/>
+                            <constraint firstItem="KVm-8Z-ySS" firstAttribute="leading" secondItem="da5-JH-VSR" secondAttribute="leading" id="RGC-Fn-Aie"/>
+                            <constraint firstItem="da5-JH-VSR" firstAttribute="bottom" secondItem="0is-5s-dpe" secondAttribute="bottom" id="Tm3-EW-le6"/>
+                            <constraint firstItem="KjO-YA-LWk" firstAttribute="height" secondItem="sno-BQ-TnW" secondAttribute="height" multiplier="50/844" id="YRy-Lq-ltm"/>
+                            <constraint firstItem="da5-JH-VSR" firstAttribute="trailing" secondItem="0is-5s-dpe" secondAttribute="trailing" id="dgQ-dq-qWb"/>
+                            <constraint firstItem="T0O-WB-Of2" firstAttribute="width" secondItem="sno-BQ-TnW" secondAttribute="width" multiplier="115/390" id="esk-r6-18y"/>
+                            <constraint firstItem="T0O-WB-Of2" firstAttribute="height" secondItem="sno-BQ-TnW" secondAttribute="height" multiplier="52/844" id="iuw-uZ-nkd"/>
+                            <constraint firstItem="da5-JH-VSR" firstAttribute="trailing" secondItem="KVm-8Z-ySS" secondAttribute="trailing" id="p2s-G7-CDW"/>
+                            <constraint firstItem="da5-JH-VSR" firstAttribute="bottom" secondItem="T0O-WB-Of2" secondAttribute="bottom" constant="40" id="rmP-Wj-z6b"/>
+                            <constraint firstItem="KjO-YA-LWk" firstAttribute="leading" secondItem="da5-JH-VSR" secondAttribute="leading" constant="10" id="zKW-jl-ZpR"/>
+                            <constraint firstItem="0is-5s-dpe" firstAttribute="top" secondItem="KjO-YA-LWk" secondAttribute="bottom" constant="15" id="zS4-M9-ifC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Now choose some podcasts." id="3JJ-gA-UMn">
+                        <barButtonItem key="leftBarButtonItem" id="dU2-as-01q"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="btnDone" destination="T0O-WB-Of2" id="6Dv-ed-pfv"/>
+                        <outlet property="colPodcastList" destination="0is-5s-dpe" id="AbL-Xk-Ae5"/>
+                        <outlet property="txtSearch" destination="KjO-YA-LWk" id="UxV-eV-ob2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mga-Et-5j6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3760.8000000000002" y="43.628185907046479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="26" height="26"/>
+        <image name="arrowBack" width="24" height="24"/>
+        <image name="facebook" width="26" height="26"/>
+        <image name="google" width="26" height="26"/>
+        <image name="logo" width="98" height="109.5"/>
+        <image name="shadow" width="390" height="135"/>
+        <image name="startBackground" width="390" height="481"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeBlack">
+            <color red="0.071000002324581146" green="0.071000002324581146" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeDarkBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.70399999618530273" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeExtraLightBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.40000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ThemeLightBlack">
+            <color red="0.16099999845027924" green="0.16099999845027924" blue="0.16099999845027924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
